@@ -1,7 +1,11 @@
 import path from 'node:path'
-import { BrowserWindow, app, shell } from 'electron'
+import { createRequire } from 'node:module'
+import { fileURLToPath } from 'node:url'
+
+import { BrowserWindow, app, nativeTheme, shell } from 'electron'
 import { electronApp, optimizer } from '@electron-toolkit/utils'
 import contextMenu from 'electron-context-menu'
+import remote from '@electron/remote/main'
 
 // process.js 必须位于非依赖项的顶部
 import './helpers/process.js'
@@ -15,6 +19,9 @@ import { icnsLogoPath, icoLogoPath, logoPath } from './configs/index.js'
 import events from './events/index.js'
 
 // import copilot from './copilot/index.js'
+
+const require = createRequire(import.meta.url)
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 log.initialize({ preload: true })
 
@@ -77,14 +84,15 @@ function createWindow() {
     minHeight: 800,
     autoHideMenuBar: true,
     webPreferences: {
-      // nodeIntegration: true,
-      // contextIsolation: false,
-      preload: path.join(__dirname, './preload.js'),
+      preload: path.join(__dirname, 'preload.mjs'),
+      nodeIntegration: true,
       sandbox: false,
       spellcheck: false,
     },
-    backgroundColor: 'white',
   })
+
+  remote.enable(mainWindow.webContents)
+  remote.initialize()
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()

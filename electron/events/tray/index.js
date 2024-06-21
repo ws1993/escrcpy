@@ -1,7 +1,7 @@
 import { Menu, Tray, app, dialog } from 'electron'
-import { trayPath } from '@electron/configs/index.js'
-import appStore from '@electron/helpers/store.js'
-import { executeI18n } from '@electron/helpers/index.js'
+import { trayPath } from '$electron/configs/index.js'
+import appStore from '$electron/helpers/store.js'
+import { executeI18n } from '$electron/helpers/index.js'
 
 export default (mainWindow) => {
   const t = value => executeI18n(mainWindow, value)
@@ -115,7 +115,7 @@ export default (mainWindow) => {
       checkboxLabel: await t('close.remember'),
     })
 
-    if (checkboxChecked) {
+    if (checkboxChecked && [0, 1].includes(response)) {
       appStore.set('appCloseCode', response)
     }
 

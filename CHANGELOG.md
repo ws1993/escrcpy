@@ -1,5 +1,96 @@
 # Changelog
 
+## [1.19.3](https://github.com/viarotel-org/escrcpy/compare/v1.19.2...v1.19.3) (2024-06-13)
+
+
+### Bug Fixes
+
+* 🐛 Abnormal operations cause the program that cannot be closed ([b989140](https://github.com/viarotel-org/escrcpy/commit/b9891404f4251b7fa22cc0481d1cda29c11092dd))
+
+## [1.19.2](https://github.com/viarotel-org/escrcpy/compare/v1.19.1...v1.19.2) (2024-06-03)
+
+
+### Bug Fixes
+
+* 🐛 Automatically apply local languages ([0cc8208](https://github.com/viarotel-org/escrcpy/commit/0cc8208dd1bb51f700dcab213bd598ba07186bbb))
+
+## [1.19.1](https://github.com/viarotel-org/escrcpy/compare/v1.19.0...v1.19.1) (2024-05-26)
+
+
+### Bug Fixes
+
+* 🐛 In some cases, the light mode is abnormal ([ea227e0](https://github.com/viarotel-org/escrcpy/commit/ea227e0792b4938c8763efc833c34e8e7d587323))
+* 🐛 Search for shortcut key conflicts ([c70e6ca](https://github.com/viarotel-org/escrcpy/commit/c70e6ca2fc716ecea495b032ec0c9f4c2fc7e421))
+
+
+### Performance Improvements
+
+* ♻️ Search prompts ([0d963aa](https://github.com/viarotel-org/escrcpy/commit/0d963aab65297964a19b5e7ed1982732e96bcfcb))
+
+## [1.19.0](https://github.com/viarotel-org/escrcpy/compare/v1.18.4...v1.19.0) (2024-05-15)
+
+
+### Features
+
+* 🚀 Add page search function ([6dd8244](https://github.com/viarotel-org/escrcpy/commit/6dd8244ed58b8bb4cde17c9fe991ad5704e55057))
+* 🚀 Update dependencies to support ESM ([9f1696f](https://github.com/viarotel-org/escrcpy/commit/9f1696f289bbc8f833e9a6494d18f1d5d025bf9c))
+
+
+### Bug Fixes
+
+* 🐛 Resolving build failures ([8460945](https://github.com/viarotel-org/escrcpy/commit/8460945bd62de0d9be0b9767a3a0ece809ef05f0))
+* 🐛 Tips unavailable ([603e4e9](https://github.com/viarotel-org/escrcpy/commit/603e4e98d251a14ffdde2b48f1f064522154e6fe))
+
+
+### Performance Improvements
+
+* ♻️ FindInPage API ([fcf8269](https://github.com/viarotel-org/escrcpy/commit/fcf8269e0eba3638d8f9364e5c238c406b6fc9fe))
+* ♻️ Optimize dark mode ([2f2e1cf](https://github.com/viarotel-org/escrcpy/commit/2f2e1cfcd6ff6eae376bd260dc16d1e674e34286))
+* ♻️ Search interaction ([a195b7e](https://github.com/viarotel-org/escrcpy/commit/a195b7ead7c6664e0138f99a58b67f6800fb681f))
+* ♻️ Search variable name ([7c55e50](https://github.com/viarotel-org/escrcpy/commit/7c55e50edc1afc162696b9581ae5d25c01580ffc))
+* 🐛 Global search error ([091d503](https://github.com/viarotel-org/escrcpy/commit/091d5035dd7d6d91f7377d3cfb738c21d0c8e4f3))
+* 🚀 优化页面查找工具性能 ([8587977](https://github.com/viarotel-org/escrcpy/commit/8587977627ba1c8635b6b536dc88aeb5c067da5c))
+
+## [1.18.4](https://github.com/viarotel-org/escrcpy/compare/v1.18.3...v1.18.4) (2024-05-04)
+
+
+### Bug Fixes
+
+* 🐛 Wireless adb does not support Spaces ([1f27597](https://github.com/viarotel-org/escrcpy/commit/1f27597ff3c31fa88867199ca13e43ba20ffa088))
+
+## [1.18.3](https://github.com/viarotel-org/escrcpy/compare/v1.18.2...v1.18.3) (2024-04-12)
+
+
+### Performance Improvements
+
+* ♻️ i18n configuration ([1ca0469](https://github.com/viarotel-org/escrcpy/commit/1ca0469ff2df2ecf66b07bb3a24040490cd8563b))
+
+## [1.18.2](https://github.com/viarotel-org/escrcpy/compare/v1.18.1...v1.18.2) (2024-04-11)
+
+
+### Bug Fixes
+
+* 🐛 zh_TW Language support ([885af3a](https://github.com/viarotel-org/escrcpy/commit/885af3aa1d238a18487727ca13a6bf739dca6934))
+
+## [1.18.1](https://github.com/viarotel-org/escrcpy/compare/v1.18.0...v1.18.1) (2024-04-11)
+
+
+### Bug Fixes
+
+* 🔧 Repair merge zh-TW failed ([81ff63f](https://github.com/viarotel-org/escrcpy/commit/81ff63f1fb2703616b6fb195e0bb510a597514a8))
+
+
+### Performance Improvements
+
+* 🔧 Update workflows ([343423e](https://github.com/viarotel-org/escrcpy/commit/343423ea77418561f156cfd9f9e3a6bc559b0baa))
+
+## [1.18.0](https://github.com/viarotel-org/escrcpy/compare/v1.17.8...v1.18.0) (2024-04-11)
+
+
+### Features
+
+* Add a simple zh_TW Traditional Chinese locale ([cec6539](https://github.com/viarotel-org/escrcpy/commit/cec6539c1dde2551edf284d5e8aca1a101a583b6))
+
 ## [1.17.8](https://github.com/viarotel-org/escrcpy/compare/v1.17.7...v1.17.8) (2024-03-29)
 
 

@@ -4,9 +4,9 @@ import path from 'node:path'
 import fs from 'node:fs'
 import dayjs from 'dayjs'
 import { Adb } from '@devicefarmer/adbkit'
-import appStore from '@electron/helpers/store.js'
-import { adbPath } from '@electron/configs/index.js'
 import { uniq } from 'lodash-es'
+import appStore from '$electron/helpers/store.js'
+import { adbPath } from '$electron/configs/index.js'
 
 const exec = util.promisify(_exec)
 
@@ -37,7 +37,7 @@ appStore.onDidChange('common.adbPath', async (value, oldValue) => {
 
 const shell = async (command) => {
   const execPath = appStore.get('common.adbPath') || adbPath
-  return exec(`${execPath} ${command}`, {
+  return exec(`"${execPath}" ${command}`, {
     env: { ...process.env },
     shell: true,
   })

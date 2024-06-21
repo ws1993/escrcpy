@@ -1,7 +1,4 @@
 {
-  "zh_CN": "中文",
-  "en_US": "English",
-
   "common.cancel": "取消",
   "common.confirm": "确认",
   "common.restart": "重启",
@@ -12,6 +9,13 @@
   "common.success": "操作成功",
   "common.progress": "启动中",
   "common.loading": "加载中",
+  "common.search": "搜索",
+
+  "common.language.name": "语言",
+  "common.language.placeholder": "选择你需要的语言",
+  "common.language.zh-CN": "中文",
+  "common.language.zh-TW": "繁體中文",
+  "common.language.en-US": "English",
 
   "close.quit": "退出",
   "close.quit.cancel": "取消退出",
@@ -177,10 +181,6 @@
   "preferences.common.gnirehtet.fix.name": "gnirehtet 修复",
   "preferences.common.gnirehtet.fix.placeholder": "开启将尝试修复某些机型二次开启反向供网功能失败的问题",
   "preferences.common.gnirehtet.fix.tips": "注意：可能导致 gnirehtet 客户端重复安装",
-  "preferences.common.language.name": "语言",
-  "preferences.common.language.placeholder": "选择你需要的语言",
-  "preferences.common.language.chinese": "中文",
-  "preferences.common.language.english": "English",
   "preferences.common.auto-connect.name": "自动连接设备",
   "preferences.common.auto-connect.placeholder": "启用后，该软件将在启动时尝试自动连接到历史无线设备",
   "preferences.common.auto-mirror.name": "自动执行镜像",
@@ -216,7 +216,7 @@
   "preferences.device.show-touch.name": "展示触摸点",
   "preferences.device.show-touch.placeholder": "开启后将激活开发者选项中的显示点按触摸反馈",
   "preferences.device.show-touch.tips": "仅在物理设备上展示",
-  "preferences.device.stay-awake.name": "保持清醒",
+  "preferences.device.stay-awake.name": "保持唤醒",
   "preferences.device.stay-awake.placeholder": "开启后将防止设备进入睡眠状态",
   "preferences.device.stay-awake.tips": "仅有线方式连接时有效",
   "preferences.device.control-in-close-screen.name": "控制时关闭屏幕",
